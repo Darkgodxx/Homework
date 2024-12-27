@@ -15,6 +15,8 @@ public class Car {
         this.typeWheel = typeWheel;
         this.colorCar = colorCar;
         volumeCar = lengthCar * widthCar * heightCar;
+    }
+    public void printCar () {
         System.out.println();
         System.out.println("Параметры автомобиля: ");
         System.out.println("Длинна автомобиля: " + this.lengthCar);
