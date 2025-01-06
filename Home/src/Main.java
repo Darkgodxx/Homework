@@ -59,23 +59,23 @@ public class Main {
         }
     }
 
-    public static void printMaterial(Vehicles vehicles) {
+    public static void printMaterial(Vehicle vehicles) {
         System.out.println("Материал транспортного средства: " + vehicles.getFrame());
         vehicles.printCar();
         System.out.println();
     }
 
-    public static void writeSeats(Vehicles vehicles) {
+    public static void writeSeats(Vehicle vehicle) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите колличество мест для транспортного средства: ");
         int inputSeats1 = scanner.nextInt();
-        seats = vehicles.getNuberseats(inputSeats1);
+        seats = vehicle.getNuberseats(inputSeats1);
     }
 
-    public static void writeSound(Vehicles vehicles) {
+    public static void writeSound(Vehicle vehicle) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите звук транспортного средства: ");
         String inputSeats1 = scanner.nextLine();
-        sound = vehicles.getSounds(inputSeats1);
+        sound = vehicle.getSounds(inputSeats1);
     }
 }

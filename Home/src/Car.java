@@ -1,4 +1,4 @@
-public class Car extends Vehicles {
+public class Car extends Vehicle {
     public int lengthCar;
     public int widthCar;
     public int heightCar;

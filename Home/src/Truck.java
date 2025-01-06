@@ -1,4 +1,4 @@
-public class Truck extends Vehicles {
+public class Truck extends Vehicle {
     public Truck(String frameCar) {
         this.frameCar = frameCar;
     }
