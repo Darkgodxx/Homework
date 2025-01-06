@@ -1,22 +1,25 @@
-public class Car {
-    public String typeWheel;
-    public String typeEngine;
-    public String colorCar;
+public class Car extends Vehicles {
     public int lengthCar;
     public int widthCar;
     public int heightCar;
     public int volumeCar;
+    public String typeWheel;
+    public String typeEngine;
+    public String colorCar;
 
-    public Car(int lengthCar, int widthCar, int heightCar, String typeWheel, String typeEngine, String colorCar) {
+    public Car(int lengthCar, int widthCar, int heightCar, String typeWheel, String typeEngine, String colorCar, String frameCar) {
         this.lengthCar = lengthCar;
         this.widthCar = widthCar;
         this.heightCar = heightCar;
         this.typeEngine = typeEngine;
         this.typeWheel = typeWheel;
         this.colorCar = colorCar;
+        this.frameCar = frameCar;
         volumeCar = lengthCar * widthCar * heightCar;
     }
-    public void printCar () {
+
+    @Override
+    public void printCar() {
         System.out.println();
         System.out.println("Параметры автомобиля: ");
         System.out.println("Длинна автомобиля: " + this.lengthCar);
@@ -28,6 +31,20 @@ public class Car {
         System.out.println("Двигатель автомобиля: " + this.typeEngine);
         System.out.println("Колеса автомобиля: " + this.typeWheel);
         System.out.println("Цвет автомобиля: " + this.colorCar);
-        System.out.println();
+    }
+
+    @Override
+    public int getNuberseats(int numberOfseats) {
+        return numberOfseats;
+    }
+
+    @Override
+    public String getSounds(String sounds) {
+        return sounds;
+    }
+
+    @Override
+    public String getFrame() {
+        return frameCar;
     }
 }
