@@ -8,7 +8,8 @@ public class Student {
         this.surnameStudent = surnameStudent;
         this.workStudent = workStudent;
     }
-    public void printStudent () {
+
+    public void printStudent() {
         System.out.println("Информация о студенте: ");
         System.out.println("Имя студента: " + this.nameStudent);
         System.out.println("Фамили студента: " + this.surnameStudent);
